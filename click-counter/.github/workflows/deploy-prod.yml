@@ -1,0 +1,29 @@
+name: Deploy to Prod
+
+on:
+  workflow_dispatch:   # only manual trigger
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: prod   # adds approval gate
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::744872514312:role/GitHubActions-Deploy-Prod
+          aws-region: us-east-1
+
+      - name: Set up SAM
+        uses: aws-actions/setup-sam@v2
+
+      - name: Build & deploy
+        run: |
+          sam build
+          sam deploy --stack-name click-counter-prod --no-confirm-changeset --no-fail-on-empty-changeset
