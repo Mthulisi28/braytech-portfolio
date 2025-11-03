@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Braytech | Cloud Architect Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">Braytech</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="assets/img/profile.jpg" alt="Logo" class="hero-logo">
+      <h1>Cloud Architectures<br>by M.Zulu</h1>
+      <p>Full-Stack Developer → AWS Solutions Architect Associate</p>
+      <a href="#projects" class="btn-primary">See My Work</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <img src="assets/img/mypic.jpg" alt="Mthulisi Zulu" class="about-img">
+      <p>Based in South Africa, I specialise in <strong>AWS cloud migration</strong>, <strong>IaC</strong>, and <strong>serverless architectures</strong>. I turned 8 weeks of console click-ops into 8 lines of YAML and never looked back.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section bg-alt">
+    <div class="container">
+      <h2>Skills & Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-card">CloudFormation</div>
+        <div class="skill-card">Terraform</div>
+        <div class="skill-card">AWS SAM</div>
+        <div class="skill-card">Lambda</div>
+        <div class="skill-card">DynamoDB</div>
+        <div class="skill-card">React</div>
+        <div class="skill-card">GitHub Actions</div>
+        <div class="skill-card">DevOps</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Week-7 Ops-as-Code -->
+        <div class="project-card">
+          <h3>Week-7 Ops-as-Code</h3>
+          <p>CloudFormation StackSets for org-wide monitoring (CW, Budgets, Trail).</p>
+          <a href="https://github.com/Mthulisi28/Week-7-Monitoring-with-CloudFormation-StackSets---an-Ops-as-Code-implementation-/blob/main/README.md" target="_blank" class="btn-secondary">README →</a>
+        </div>
+        <!-- IAM-S3-EC2 HandsOn -->
+        <div class="project-card">
+          <h3>IAM-S3-EC2 HandsOn</h3>
+          <p>Foundation IaC setup: IAM roles, S3 buckets, EC2 with CloudFormation.</p>
+          <a href="https://github.com/Mthulisi28/AWS-IAM-S3-EC2-HandsOn" target="_blank" class="btn-secondary">Repo →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section bg-alt">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" rows="4" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+      <p>Or email me directly: <a href="mailto:green28@live.co.za">green28@live.co.za</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Braytech | Designed by M.Zulu</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</html>
